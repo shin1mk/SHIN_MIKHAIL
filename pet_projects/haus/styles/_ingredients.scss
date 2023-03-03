@@ -1,0 +1,231 @@
+
+.ingredients {
+      margin-top: 140px;
+      text-align: center;
+            @media (max-width: 1439.98px) {
+            }
+            @media (max-width: 1199.98px) {
+            }
+            @media (max-width: 991.98px) {
+                  margin-top: 50px;
+            }
+            @media (max-width: 767.98px) {
+            }
+            @media (max-width: 575.98px) {
+                  margin-top: 50px;
+            }
+      &:after {
+      content: '';
+      border: 1px solid #BDBDBD;
+      margin: 0 auto;
+      max-width: 1320px;
+      display: block;
+            @media (max-width: 1439.98px) {
+            }
+            @media (max-width: 1199.98px) {
+            }
+            @media (max-width: 991.98px) {
+            }
+            @media (max-width: 767.98px) {
+            }
+            @media (max-width: 575.98px) {
+                  max-width: 80%;
+            }
+      }
+
+		// .ingredients_item
+
+		&_item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 140px;
+                  @media (max-width: 1439.98px) {
+                        margin-bottom: 110px;
+                  }
+                  @media (max-width: 1199.98px) {
+                        margin-bottom: 90px;
+                  }
+                  @media (max-width: 991.98px) {
+                        margin-bottom: 70px;
+                  }
+                  @media (max-width: 767.98px) {
+                        margin-bottom: 50px;
+
+                  }
+                  @media (max-width: 575.98px) {
+                        flex-direction: column;
+                        align-items: center;
+                        margin-bottom: 30px;
+                  }
+		}
+
+		// .ingredients__title
+
+		&__title {
+            font-family: 'Liberation Serif';
+            font-weight: 400;
+            font-size: 64px;
+            color: #000000;
+            text-align: center;
+            line-height: 80px;
+
+                  @media (max-width: 1439.98px) {
+                  }
+                  @media (max-width: 1199.98px) {
+                  }
+                  @media (max-width: 991.98px) {
+                  }
+                  @media (max-width: 767.98px) {
+                  }
+                  @media (max-width: 575.98px) {
+                        font-size: 24px;
+                        line-height: 46px;
+                  }
+		}
+
+		// .ingredients__subtitle
+
+		&__subtitle {
+            font-family: 'Roboto';
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            margin: 25px 0 82px 0;
+
+                  @media (max-width: 1439.98px) {
+                  }
+                  @media (max-width: 1199.98px) {
+                  }
+                  @media (max-width: 991.98px) {
+                  }
+                  @media (max-width: 767.98px) {
+                  }
+                  @media (max-width: 575.98px) {
+                        margin-bottom: 0;
+                  }
+
+		}
+
+		// .ingredients__title--link
+
+		&__title--link {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+            @media (max-width: 1439.98px) {
+            }
+            @media (max-width: 1199.98px) {
+            }
+            @media (max-width: 991.98px) {
+            }
+            @media (max-width: 767.98px) {
+            }
+            @media (max-width: 575.98px) {
+                  font-size: 16px;
+            }
+		}
+
+		// .ingredients__item--kit
+
+		&__item--kit {
+                  max-width: 382px;
+		}
+
+            // .ingredients__item--link
+      
+            &__item--link {
+            }
+      
+            // .ingredients__item--pic
+      
+            &__item--pic {
+                  max-width: 90%;
+            }
+      
+      
+		// .ingredients__item--suptitle
+
+		&__item--suptitle {
+            font-family: 'Liberation Serif';
+            font-size: 30px;
+            color: $black;
+            margin-top: 20px;
+            @media (max-width: 1439.98px) {
+            }
+            @media (max-width: 1199.98px) {
+            }
+            @media (max-width: 991.98px) {
+            }
+            @media (max-width: 767.98px) {
+            }
+            @media (max-width: 575.98px) {
+                  font-size: 22px;
+                  margin-top: 0;
+            }
+            
+		}
+
+		// .ingredients__item--text
+
+		&__item--text {
+            font-family: 'Roboto';
+            font-weight: 400;
+            margin-top: 16px;
+            font-size: 16px;
+            line-height: 28px;
+            color: $black;
+            @media (max-width: 1439.98px) {
+            }
+            @media (max-width: 1199.98px) {
+            }
+            @media (max-width: 991.98px) {
+            }
+            @media (max-width: 767.98px) {
+            }
+            @media (max-width: 575.98px) {
+                  font-size: 16px;
+            }
+            
+		}
+}
+.btn {
+
+		// .btn__ingredients
+
+		&__ingredients {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: $white;
+            padding: 19px 48px 18px 49px;
+            background: $black;
+            margin-top: 30px;
+
+                  @media (max-width: 1439.98px) {
+                  }
+                  @media (max-width: 1199.98px) {
+                  }
+                  @media (max-width: 991.98px) {
+                  }
+                  @media (max-width: 767.98px) {
+                  }
+                  @media (max-width: 575.98px) {
+                        margin: 15px 0 30px 0;
+                  }
+
+            &:hover {
+                  cursor: pointer;
+                  background: #1e1e1e;
+                  transition: 0.3s all ease;
+            }
+
+		}
+
+            &__ingredients--link {
+                  color: $white;
+            }
+
+}

@@ -1,0 +1,187 @@
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+    /* при отображении модального окно */
+    &:target { 
+        opacity: 1; /* делаем окно видимым */
+        pointer-events: auto; /* элемент видим для событий мыши */
+        overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+    }
+
+    // .modal__dialog
+    /* ширина модального окна и его отступы от экрана */    
+    &__dialog {
+        position: relative;
+        width: auto;
+        margin: 10px;
+        @media (min-width: 576px) {
+            max-width: 500px;
+            margin: 30px auto; /* для отображения модального окна по центру */
+        }
+    }
+
+    // .modal__content
+    /* свойства для блока, содержащего контент модального окна */ 
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: .3rem;
+        outline: 0;
+        @media (min-width: 768px) {
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        }
+    }
+
+    // .modal__header
+    /* свойства для заголовка модального окна */
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid #eceeef;
+    }
+
+    // .modal__title
+
+    &__title {
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    // .modal__body
+     /* свойства для блока, содержащего основное содержимое окна */
+    &__body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+    }
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 30px;    
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+        &:focus, .close:hover {
+        color: #000;
+        cursor: pointer;
+        opacity: .75;
+        }
+}
+.password {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    &:focus {
+        background-color: #ddd;
+        outline: none;
+        }
+}
+
+.signupbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    &:hover {
+        opacity: 100%;
+        transition: 0.1s all ease;
+    }
+}
+.cancelbtn {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    &:hover {
+        opacity: 100%;
+        transition: 0.1s all ease;
+    }
+}
+// modal registr
+
+
+
+
+
+
+// modal search
+.form__modal {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    }
+.form__modal--search{
+    padding: 8px 10px 9px;
+    border: 1px solid $green;
+    border-radius: 5px;
+    font-size: 16px;
+    color: $green;
+    outline: none;
+    text-align: center;
+    }
+
+.form__submit {
+    height: 38px;
+    width: 90px;
+    padding: 10px 20px 9px 20px;
+    background: #4676D7;
+    border: 1px solid #4676D7;
+    font-size: 14px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color:#ffffff;
+    &:hover {
+        background: #1d49aa;
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+}
+.modal--search {
+    color: #4CAF50;
+    padding: 15px 0;
+}
+
+// modal search end
+
+
+
+// modal bag
+.modal--bag p {
+    font-size: 30px;
+    text-align: center;
+}

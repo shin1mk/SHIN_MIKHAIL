@@ -1,0 +1,369 @@
+.drinks {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: 1439.98px) {
+    }
+    @media (max-width: 1199.98px) {
+    }
+    @media (max-width: 991.98px) {
+        flex-direction: column-reverse;
+        position: static;
+        margin-top:60px;
+    }
+    @media (max-width: 767.98px) {
+        flex-direction: column-reverse;
+        position: static;
+        margin-top: 50px;
+    }
+    @media (max-width: 575.98px) {
+        flex-direction: column-reverse;
+        position: static;
+        margin-top: 30px;
+    }
+
+    // .drinks__text
+
+    &__text {
+        max-width: 380px;
+        margin-top: 50px;
+            @media (max-width: 1439.98px) {
+                padding: 0 30px 0 20px;
+                margin-top: 50px;
+            }
+            @media (max-width: 1199.98px) {
+                padding: 0 20px 0 20px;
+                margin-top: 40px;
+            }
+            @media (max-width: 991.98px) {
+                max-width: 100%;
+                padding-left: 20px;
+                margin-top: 30px;
+            }
+            @media (max-width: 767.98px) {
+                max-width: 100%;
+                padding-left: 20px;
+                margin-top: 20px;
+            }
+            @media (max-width: 575.98px) {
+                max-width: 100%;
+                padding-left: 20px;
+                margin-top: 10px;
+            }
+    }
+
+    // .drinks__easy
+
+    &__easy {
+        font-family: 'Liberation Serif';
+        font-weight: 400;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 19px;
+        line-height: 44px;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {
+        }
+        @media (max-width: 575.98px) {
+            font-size: 24px;
+        }
+    }
+
+    // .drinks__easy--text
+
+    &__easy--text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 20px;
+        line-height: 32px;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {
+        }
+        @media (max-width: 575.98px) {
+            font-size: 16px;
+            max-width: 90%;
+        }
+    }
+
+    // .drinks__easy--natural
+
+    &__easy--natural {
+        font-family: 'Liberation Serif';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        color: $black;
+        line-height: 44px;
+        margin-bottom: 17px;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {
+        }
+        @media (max-width: 575.98px) {
+            font-size: 24px;
+        }
+    }
+
+    // .drinks__easy--artifical
+
+    &__easy--artifical {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: $black;
+        margin-bottom: 20px;
+        line-height: 32px;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {
+        }
+        @media (max-width: 575.98px) {
+            font-size: 16px;
+        }
+    }
+
+    // .drinks__easy--delivered
+
+    &__easy--delivered {
+        font-family: 'Liberation Serif';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+        line-height: 44px;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {
+        }
+        @media (max-width: 575.98px) {
+            font-size: 24px;
+        }
+    }
+
+    // .drinks__easy--we
+
+    &__easy--we {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: $black;
+        line-height: 32px;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {
+        }
+        @media (max-width: 575.98px) {
+            font-size: 16px;
+        }
+    }
+}
+
+
+.drink {
+
+    // .drink__img
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: -19px;
+        max-width: 100%;
+            @media (max-width: 1439.98px) {
+                max-width: 70%;
+                right: 20px;
+            }
+            @media (max-width: 1199.98px) {
+                position: static;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            @media (max-width: 991.98px) {
+                position: static;
+                max-width: 100%;
+            }
+            @media (max-width: 767.98px) {
+                position: static;
+                max-width: 100%;
+            }
+            @media (max-width: 575.98px) {
+                position: static;
+                max-width: 100%;
+            }
+            
+            img {
+                @media (max-width: 1439.98px) {
+                    max-width: 100%;
+                }
+                @media (max-width: 1199.98px) {
+                    max-width: 100%;
+                }
+                @media (max-width: 991.98px) {
+                    max-width: 100%;
+                }
+                @media (max-width: 767.98px) {
+                    max-width: 100%;
+                }
+                @media (max-width: 575.98px) {
+                    max-width: 100%;
+                }
+            }
+    }
+}
+
+
+
+
+
+// comment
+.comment {
+
+    // .comment__about
+
+    &__about {
+        margin-top: 50px;
+        max-width: 1440px;
+        height: 315px;
+        background: $black;
+        display: flex;
+        justify-content: space-between;
+        padding: 95px 0 0 75px;
+
+            @media (max-width: 1439.98px) {
+            }
+            @media (max-width: 1199.98px) {
+            }
+            @media (max-width: 991.98px) {
+            }
+            @media (max-width: 767.98px) {
+                max-width: 757.98px;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding-bottom: 50px;
+                align-items: center;
+            }
+            @media (max-width: 575.98px) {
+                max-width: 575.98px;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding-bottom: 50px;
+                align-items: center;
+            }
+
+        &:last-child {
+            padding-right: 75px;
+        }
+
+
+    }
+
+    // .comment__about--text
+
+    &__about--text {
+        max-width: 300px;
+        text-align: center;
+        @media (max-width: 1439.98px) {
+            padding-right: 10px;
+        }
+        @media (max-width: 1199.98px) {
+            padding-right: 10px;
+        }
+        @media (max-width: 991.98px) {
+            padding-right: 20px;
+        }
+        @media (max-width: 767.98px) {      
+        }
+        @media (max-width: 575.98px) {
+        }
+    }
+
+    // .comment__about--comment
+
+    &__about--comment {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-bottom: 17px;
+        line-height: 32px;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {                
+            justify-content: center;
+            text-align: center;
+        }
+        @media (max-width: 575.98px) {
+            font-size: 16px;
+        }
+
+    }
+
+    // .comment__about--author
+
+    &__about--author {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 11px;
+    }
+
+    // .comment__about--verified
+
+    &__about--verified {
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #8A8A8A;
+        @media (max-width: 1439.98px) {
+        }
+        @media (max-width: 1199.98px) {
+        }
+        @media (max-width: 991.98px) {
+        }
+        @media (max-width: 767.98px) {
+        }
+        @media (max-width: 575.98px) {
+            padding-bottom: 20px;
+        }
+    }
+}

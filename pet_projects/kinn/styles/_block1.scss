@@ -1,0 +1,48 @@
+// block1 start 
+.block1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    // .block1__text
+
+    &__text {
+        font-size: 57px;
+        line-height: 81px;
+        @media (max-width: 991.98px) {
+            font-size: 45px;
+            padding: 0 20px 0 20px;
+        }
+        @media (max-width: 767.98px) {
+            font-size: 30px;
+            line-height: 60px;
+        }
+        @media (max-width: 575.98px) {
+            font-size: 16px;
+            line-height: 45px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+.btn {
+    &::after {
+        content: '';
+        border: 1px solid $green;
+        display: block;
+    }
+}
+.btn--underline {
+    background: none;
+    color: $green;
+    &:hover {
+        svg {
+            transition: 0.3s all ease;
+            transform: translate(5px);
+            }
+    }
+    @media (max-width: 575.98px) {
+        font-size: 12px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,68 @@
+html {
+    font-size: $font-size;
+    font-family: $font-family;
+    background: $background-color;
+}
+
+// Container
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 1439.98px) {
+        max-width: 1200px;
+    }
+    @media (max-width: 1199.98px) {
+    max-width: 1180px
+    }
+
+    @media (max-width: 991.98px) {
+        max-width: 970px;
+    }
+
+    @media (max-width: 767.98px) {
+        max-width: 740px;
+    }
+
+    @media (max-width: 575.98px) {
+        max-width: 570px;
+    }
+
+    @media (max-width: 479.98px) {
+        max-width: none;
+    }
+}
+
+//
+// @media (max-width: 1439.98px) {
+// }
+// @media (max-width: 1199.98px) {
+// }
+//
+// @media (max-width: 991.98px) {
+// }
+//
+// @media (max-width: 767.98px) {
+// }
+//
+// @media (max-width: 575.98px) {
+// }
+//
+// @media (max-width: 479.98px) {
+// }
+
+
+body {
+    color: $white;
+    font-family: "Bebas", sans-serif;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+

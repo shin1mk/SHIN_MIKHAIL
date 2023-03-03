@@ -1,0 +1,66 @@
+// card header 
+.card {
+    width: 340px;
+    min-height: 700px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
+
+    &__header {
+        position: relative;
+        display: flex;
+        height: 200px;
+        width: 100%;
+    }
+
+    &__cover {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        background-size: cover;
+        background-position: center;
+        filter: blur(4px);
+        transform: scale(1.5);
+    }
+
+    &__avatar {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 8px 8px rgba(108, 108, 108, 0.2);
+        border-radius: 50%;
+        object-fit: cover;
+        left: 50%;
+        transform: translateX(-50%) translateY(40px);
+    }
+
+    &__fullname {
+        position: absolute;
+        bottom: 18px;
+        font-size: 22px;
+        left: 50%;
+        transform: translateY(0px) translateX(-50%);
+    }
+
+    &__jobtitle {
+        position: absolute;
+        bottom: 15px;
+        font-size: 13px;
+        letter-spacing: 1.2px;
+        left: 50%;
+        transform: translateX(-50%) translateY(20px);
+    }
+}
+
+
+
+
+
+

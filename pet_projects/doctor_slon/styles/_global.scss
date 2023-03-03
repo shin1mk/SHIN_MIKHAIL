@@ -1,0 +1,52 @@
+html {
+    font-size: $font-size;
+    font-family: $font-family;
+    background: $background-color;
+}
+
+// Container
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 1439.98px) {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    @media (max-width: 1199.98px) {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    @media (max-width: 991.98px) {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    @media (max-width: 767.98px) {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    @media (max-width: 575.98px) {
+        max-width: 570px;
+        padding: 0 15px;
+    }
+    @media (max-width: 479.98px) {
+        max-width: 479.98px;
+        padding: 0 15px;
+    }
+}
+
+//
+// @media (max-width: 1439.98px) {
+// }
+// @media (max-width: 1199.98px) {
+// }
+// @media (max-width: 991.98px) {
+// }
+// @media (max-width: 767.98px) {
+// }
+// @media (max-width: 575.98px) {
+// }
+// @media (max-width: 479.98px) {
+// }

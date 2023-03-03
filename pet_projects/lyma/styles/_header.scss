@@ -1,0 +1,435 @@
+// header 
+// navbar ------------------------------------------- navbar start 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		// .nav__menu
+
+		&__menu {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            align-items: center;
+		}
+
+		// .nav__menu--item
+
+		&__menu--item {
+            list-style: none;
+            font-family: 'Montserrat';
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 1.67px;
+            color: rgba(0, 0, 0, 0.3);
+		}
+
+		// .nav__menu--link
+
+		&__menu--link {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.3);
+            padding: 0 30px 0 0;
+            &:hover {
+                color: $black;
+                transition: 0.3s all ease;
+            }
+		}
+
+            // .nav__btn--item
+    
+            &__button--item {
+                padding: 5px 20px 5px 20px;
+                background: $black;
+                font-family: 'Montserrat';
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 1.67px;
+                list-style: none;
+                align-items: center;
+                &:hover {
+                    cursor: pointer;
+                    background: rgba(0, 0, 0, 0.811);
+                    transition: 0.2s all ease;
+                }
+            }
+    
+            // .nav__btn--link
+    
+            &__button--link {
+                color: rgba(226, 224, 224, 0.945);
+                text-decoration: none;
+            }
+    
+}
+
+// nav bar end -------------------------------------------navbar end
+
+// header start ------------------------------------------- header start 
+.header {
+    &__image {
+        position: relative;
+    }
+
+    // .header__intro
+
+    &__intro {
+        position: absolute;
+        top: 300px;
+        left: 350px;
+        z-index: 5;
+        width: 756px;
+        height: 300px;
+        text-align: center;
+    }
+
+    // .header__title
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 57px;
+        line-height: 67px;
+        text-align: center;
+        letter-spacing: 0.81px;
+        color: $white;
+    }
+
+    // .header__subtitle
+
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.44px;
+        color: $white;
+        padding-bottom: 40px;
+    }
+}
+
+// supplement button ---------------------------------- supplement button 
+.supplement {
+
+    &__button {
+        padding: 8px 50px 8px 50px;
+        border: 1px solid $white;
+        display: inline-block;
+        margin-right: 20px;
+        &:hover {
+            background: #ffffff32;
+            cursor: pointer;
+            transition: 0.3s all ease;
+        }
+    }
+
+    // .supplement__link
+
+    &__button--link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: $white;
+        text-decoration: none;
+    }
+    
+}
+
+// laser button ---------------------------------- laser button
+.laser {
+
+        &__button {
+        display: inline-block;
+        padding: 8px 80px 8px 80px;
+        border: 1px solid $white;
+            &:hover {
+                background: #ffffff32;
+                cursor: pointer;
+                transition: 0.3s all ease;
+            }
+        }
+    
+
+    // .laser__link
+
+    &__button--link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+// header end ------------------------------------------- header end 
+
+// procedure start ----------------------------------  procedure start 
+.procedure {
+    display: flex;
+    margin: 16px 0 16px 0;
+    position: relative;
+}
+
+// supplement start ---------------------------------- supplement start 
+.supplement {
+
+		// .supplement__img
+
+		&__img {
+            width: 710px;
+            height: 500px;
+            margin-right: 20px;
+		}
+
+		// .supplement__title
+
+		&__title {
+            font-family: 'Roboto';
+            font-size: 34px;
+            line-height: 43px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: $white;
+		}
+
+		// .supplement__subtitle
+
+		&__subtitle {
+            font-family: 'Montserrat';
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            color: $white;
+		}
+
+}
+
+.procedures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supplement {
+    position: absolute;
+    bottom: 25px;
+    left: 240px;
+    z-index: 10;
+
+		// .supplemet__discover
+
+		&__discover {
+            font-family: 'Montserrat';
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            display: inline-block;
+            margin-right: 125px;
+            &:last-child {
+                margin-right: 0;
+            }
+		}
+
+        // .supplement__discover--link
+
+		&__discover--link {
+            text-decoration: none;
+            color: #FFFFFF;
+            &:hover {
+                color: #ffffff8b;
+                transition: 0.3s all ease;
+            }
+		}
+}
+
+// laser start ---------------- start laser 
+.laser {
+    position: absolute;
+    bottom: 25px;
+    left: 940px;
+    z-index: 10;
+
+    // .laser__title
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 32px;
+        line-height: 43px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+
+    // .laser__subtitle
+
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    // .laser__discover
+
+    &__discover {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: inline-block;
+        margin-right: 125px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    // .laser__discover--link
+
+    &__discover--link {
+        text-decoration: none;
+        color: #FFFFFF;
+        &:hover {
+            color: #ffffff8b;
+            transition: 0.3s all ease;
+        }
+    }
+}
+
+// laser end ---------------------------- laser end 
+
+
+// better start ---------------------------------- better start 
+
+.better {
+    width: 1440px;
+    height: 730px;
+    background: $black;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+
+    // .better__title
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 38px;
+        line-height: 43px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-top: 67px;
+    }
+
+    // .better__text
+
+    &__text {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 532px;
+        padding-top: 30px;
+        margin: 0 auto;
+
+    }
+}
+
+// better end ------------------------------------------------ better end 
+
+// innovation start ------------------------------------------ innovation start 
+.innovations{
+    position: absolute;
+    top: 38%;
+    left: 450px;
+    text-align: center;
+    z-index: 5;
+}
+.innovation {
+    position: relative;
+    margin-bottom: 16px;
+
+    // .innovation__title
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 38px;
+        line-height: 43px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 555px;
+    }
+}
+
+// innovation end ------------------------------------------ innovation end 
+
+// founder start ------------------------------------------ founder start 
+.founder {
+    position: relative;
+    margin-bottom: 16px;
+
+    // .founder__meet
+
+    &__meet {
+        position: absolute;
+        top: 22%;
+        left: 850px;
+    }
+
+    // .founder__meet--title
+
+    &__meet--title {
+        font-family: 'Roboto';
+        font-size: 35px;
+        line-height: 43px;
+        letter-spacing: 0.5px;
+        color: #1B1B1B;
+    }
+
+    // .founder__meet--subtitle
+
+    &__meet--subtitle {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 25px;
+        color: #666666;
+        width: 350px;
+    }
+
+    // .founder__read
+
+    &__read {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #1B1B1B;
+    }
+
+    &__read--link {
+        color: #1B1B1B;
+        text-decoration: none;
+        &:hover {
+            color: #1b1b1b31;
+            transition: 0.3s all ease;
+        }
+    }
+}
+// founder end ------------------------------------------ founder end 

@@ -1,0 +1,97 @@
+// Footer
+.footer {
+
+		// .footer__title
+
+		&__title {
+            font-family: 'Avenir';
+            color: $grey;
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 0;
+		}
+}
+// download
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playmarket {
+    margin-right: 10px;
+}
+
+.appstore {
+    margin-left: 10px;
+}
+
+
+
+//subscribe & call
+.social {
+    max-width: 400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    }
+.subscribe {
+
+		// .subscribe__title
+
+		&__title {
+            font-family: 'Avenir';
+            color: $grey;
+            font-size: 16px;
+            text-align: center;
+            margin: 20px 0;
+		}
+}
+.call {
+
+		// .call__title
+
+		&__title {
+            font-family: 'Avenir';
+            color: $grey;
+            font-size: 16px;
+            text-align: center;
+            margin: 20px 0;
+		}
+}
+
+// information 
+.information p {
+    max-width: 600px;
+    font-family: 'Avenir';
+    color: $grey;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto;
+    @media (max-width: 575.98px) {
+        max-width: 570px;
+        padding: 0 10px;
+    }
+    @media (max-width: 479.98px) {
+        max-width: 479.98px;
+        padding: 0 10px;
+    }
+}
+
+
+//buttons
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.btn {
+    padding: 5px 20px;
+    margin-left: 10px;
+    background-color: #5089c2;
+    border-radius: 5px;
+    color: $white;
+    &:hover {
+        background-color: #3e93e9;
+        transition: 0.1s all ease;
+    }
+}

@@ -1,0 +1,32 @@
+html {
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $green;
+    background: $background-color;
+}
+
+// Container
+.container {
+    max-width: 1328px;
+    height: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1399.98px) {
+        max-width: 1328px;
+    }
+    @media (max-width: 1199.98px){
+        max-width: 1190px;
+    }
+    @media (max-width: 1023.98px){
+        max-width: 1190px;
+    }
+    @media (max-width: 991.98px) {
+        max-width: 990px;
+    }
+    @media (max-width: 767.98px) {
+        max-width: 762px;
+    }
+    @media (max-width: 575.98px) {
+        max-width: 570px;
+    }
+}

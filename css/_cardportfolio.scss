@@ -1,0 +1,42 @@
+// card exp
+.card {
+  // .card_link
+
+  &_link {
+    color: $graytext;
+    line-height: 1.2;
+    font-size: 14px;
+    font-family: 'Roboto';
+    &:hover {
+      color: #6f6f7b;
+      transition: 0.3s all ease;
+    }
+  }
+
+  // .card__subtitle
+
+  &__subtitle {    
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  // .card__item
+
+  &__item {
+    position: relative;
+    padding-left: 80px;
+    padding-bottom: 5px;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 50px;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background: #1e42d1;
+    }
+  }
+}

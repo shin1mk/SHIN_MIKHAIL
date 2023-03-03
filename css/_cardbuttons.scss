@@ -1,0 +1,31 @@
+.card-buttons {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.88);
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  
+    button {
+      flex: 1 1 auto;
+      font-size: 14px;
+      padding: 15px 5px;
+      cursor: pointer;
+      color: #5c5c6d;
+      transition: 0.3s;
+      font-family: "Roboto", sans-serif;
+      border-bottom: 4px solid transparent;
+  
+      &.is-active,
+      &:hover {
+        color: $black;
+        border-bottom: 3px solid $blue;
+        background: linear-gradient(
+          to bottom,
+          rgba(127, 199, 231, 0) 0%,
+          rgba(207, 204, 255, 0.2) 44%,
+          rgba(211, 226, 255, 0.4) 100%
+        );
+      }
+    }
+  }
